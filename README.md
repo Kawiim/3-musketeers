@@ -8,20 +8,9 @@
 
 - [Introduction](#introduction)
 - [Objective - Workshop in 1 sentence](#objective---workshop-in-1-sentence)
-- [How to do that?](#how-to-do-that)
-  - [Stack](#stack)
 - [Just tell me what to do](#just-tell-me-what-to-do)
-- [Examples of steps to do](#examples-of-steps-to-do)
-  - [Investigation](#investigation)
-    - [Michelin Restaurant](#michelin-restaurant)
-    - [Deals from LaFourchette](#deals-from-lafourchette)
-    - [The web application](#the-web-application)
-  - [Server-side with Node.js](#server-side-with-nodejs)
-    - [require('michelin')](#requiremichelin)
-    - [require('lafourchette')](#requirelafourchette)
-  - [Client-side with React](#client-side-with-react)
-  - [Notification (bonus)](#notification-bonus)
-- [Don't forget](#dont-forget)
+  - [RDD and CDD](#rdd-and-cdd)
+  - [TDD](#tdd)
 - [Licence](#licence)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -37,8 +26,7 @@ The library [cash](./cash) that we need to
 * write the README.md
 * write missing comments with JSDoc
 
-The library [star-wars](./star-wars) that we need to
-
+The library [bitcoin](./bitcoin) that we need to
 
 * write Unit Tests (with Jest as testing framework)
 
@@ -62,7 +50,7 @@ The library [star-wars](./star-wars) that we need to
 
 Execute unit test with `npm run test` or `yarn run test`
 
-* write the unit tests [bitcoin/__tests__/convert.js](bitcoin/__tests__/convert.js) to cover 80% 
+* write the unit tests [bitcoin/__tests__/convert.js](bitcoin/__tests__/convert.js) to cover 80%
 
 * commit your different modifications:
 

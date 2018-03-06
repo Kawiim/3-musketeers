@@ -53,10 +53,16 @@ The library [star-wars](./star-wars) that we need to
 ❯ git clone git@github.com:YOUR_USERNAME/3-musketeers.git
 ```
 
+### RDD and CDD
 
-* complete [cash/README.md](./cash/README.md) file with a complete description of instalallation, usage...
-* comment files [cash/README.md](./cash/README.md) with JSDoc blocks
-* complete test files inot
+* complete the [cash/README.md](./cash/README.md) file with a complete description of installation, usage... of the library
+* add JSDOC function blocks for the 3 files [cash/bin/cash.js](./cash/bin/cash.js), [cash/bin/helpers.js](./cash/bin/helpers.js) and [cash/bin/index.js](./cash/bin/index.js)
+
+### TDD
+
+Execute unit test with `npm run test` or `yarn run test`
+
+* write the unit tests [bitcoin/__tests__/convert.js](bitcoin/__tests__/convert.js) to cover 80% 
 
 * commit your different modifications:
 

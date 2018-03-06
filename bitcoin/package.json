@@ -1,0 +1,31 @@
+{
+  "name": "bitcoin",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "big.js": "^3.1.3"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2"
+  },
+  "resolutions": {
+    "**/istanbul-lib-instrument": "1.9.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  }
+}

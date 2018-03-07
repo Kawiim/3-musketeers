@@ -35,6 +35,7 @@ function convert(from, fromUnit, toUnit, representation) {
 
     if (!representation || representation === 'Number') {
         return Number(result);
+
     } else if (representation === 'Big') {
         return result;
     } else if (representation === 'String') {

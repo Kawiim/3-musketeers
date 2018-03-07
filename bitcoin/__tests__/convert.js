@@ -4,27 +4,28 @@ const convert = require('..');
 const Big = require('big.js');
 
 test('should default to returning a Number', () => {
-  //convert(2, 'BTC', 'BTC');
+  expect(typeof convert(2, 'BTC', 'BTC')).toBe("number");
 });
 
 test('should return a Number', () => {
-  //convert(2, 'BTC', 'BTC', 'Number');
+  expect(typeof convert(2, 'BTC', 'BTC')).toBe("number");
 });
 
 test('should return a Big number', () => {
-  //convert(2, 'BTC', 'BTC', 'Big');
+  expect(convert(2, 'BTC', 'BTC', 'Big').constructor.name).toBe("Big");
 });
 
 test('should return a String', () => {
-  //convert(2100, 'mBTC', 'BTC', 'String');
+  expect(typeof convert(2100, 'mBTC', 'BTC', 'String')).toBe("string");
 });
 
 test('should convert an integer', () => {
-  //convert(123456789012345, 'Satoshi', 'BTC', 'Number');
+  //TOBEFIXED
+  expect(typeof convert(123456789012345, 'Satoshi', 'BTC', 'Number')).toBe("number");
 });
 
 test('should convert a number', () => {
-  //convert(1234567.89012345, 'BTC', 'Satoshi', 'Number');
+    expect(typeof convert(1234567.89012345, 'BTC', 'Satoshi', 'Number')).toBe("number");
 });
 
 test('should convert a string', () => {

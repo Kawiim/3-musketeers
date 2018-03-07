@@ -18,7 +18,7 @@ npm install cash -g
 #### Help
 You have access to all available commands using -h/--help option :
 ```
-node index --help
+$cash --help
 ```
 ![alt text](img/help.PNG "Help capture")
 

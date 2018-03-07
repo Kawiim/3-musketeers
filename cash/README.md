@@ -20,7 +20,7 @@ You have access to all available commands using -h/--help option :
 ```
 node index --help
 ```
-![alt text](img\help.png "Help capture")
+![alt text](img/help.png "Help capture")
 
 
 ### Contributing

@@ -8,6 +8,11 @@ const config = new Conf();
 
 updateNotifier({pkg}).notify();
 
+/** Function saving a given currency as default one
+ * @param {array} argv - An optional array containing the default curencies to save
+ * @param {string} argv[1] - The default inital currency
+ * @param {string} argv[2-4] - The default targetted currencies 
+ **/
 const saveCurrencies = argv => {
   config.set('defaultFrom', argv[1] || config.get('defaultFrom', 'USD'));
   config.set(
@@ -20,11 +25,17 @@ const saveCurrencies = argv => {
   process.exit(1);
 };
 
+/** 
+ * Function printing the application version 
+ **/
 const version = () => {
   console.log(pkg.version);
   process.exit(1);
 };
 
+/**
+ * Function printing help information for the user
+ **/
 const help = () => {
   console.log(`
 Usage:
@@ -57,6 +68,9 @@ Examples:
   process.exit(1);
 };
 
+/** Function used to detect command arguments and execute corresponding function
+ * @param {array} argv - An array object containing the used command arguments
+ **/
 const helpers = argv => {
   // Version
   if (argv.indexOf('--version') !== - 1 || argv.indexOf('-v') !== - 1) {

@@ -7,6 +7,13 @@ const currencies = require('../lib/currencies.json');
 
 const API = 'https://api.fixer.io/latest';
 
+/** Function converting a given amount from a currency to another one
+ * @param {JSON} configuration - A JSON object containing the needed parameters
+ * @param {float} configuration.amount - The amount of money to be converted
+ * @param {string} configuration.to - The wanted currency
+ * @param {string} configuration.from - The initial currency
+ * @param {string} configuration.loading - Current state of the convert 
+ **/
 const convert = configuration => {
   const {amount, to, from, response, loading} = configuration;
 
@@ -34,6 +41,12 @@ const convert = configuration => {
   process.exit(1);
 };
 
+/** User command used to convert currency asynchronously 
+ * @param {JSON} command - A JSON object containing the needed parameters
+ * @param {float} command.amount - The amount of money to be converted
+ * @param {string} command.to - The wanted currency
+ * @param {string} command.from - The initial currency
+ **/
 const cash = async command => {
   const amount = command.amount;
   const from = command.from.toUpperCase();

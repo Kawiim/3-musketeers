@@ -6,6 +6,9 @@ const cash = require('./cash.js');
 
 const config = new Conf();
 
+/** 
+ * Splitting the command from the given arguments 
+ **/
 const argv = process.argv.slice(2);
 
 helpers(argv);
